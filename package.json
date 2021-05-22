@@ -1,7 +1,7 @@
 {
   "name": "react-dir-tree",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "repository": "https://github.com/PinoFlores/react-dir-tree",
   "homepage": "https://github.com/PinoFlores/react-dir-tree#readme",
   "description": "Directory Tree React Component",
