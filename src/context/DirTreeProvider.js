@@ -10,15 +10,18 @@ export const DirTreeProvider = (props) => {
     subDirectories: [],
   });
 
-  const fetchBaseDir = (dir) => {
+  const fetchBaseDir = () => {
     axios
       .get(`${props.baseUrl}`, {
         params: {
-          dir,
+          dir: props.baseDirectory,
         },
       })
       .then(({data}) => {
         setBaseDir(data.path);
+      })
+      .catch((error) => {
+        console.error(error);
       });
   };
 
